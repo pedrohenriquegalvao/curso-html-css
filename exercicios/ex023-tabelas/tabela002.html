@@ -12,6 +12,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,8 +28,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n - 1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -118,14 +133,68 @@
                 <td>Paraíba</td>
                 <td class="num">4.059.905</td>
             </tr>
-
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.567.234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.560.903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.365.351</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.289.290</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.839.188</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.338.474</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.815.278</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.607.363</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>0000</strong></td>
+                <td class="num"><strong>214.167.295</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus, quasi reprehenderit quaerat in illum fugiat ex sed maiores eligendi nemo quos illo architecto quam voluptas blanditiis animi libero impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis sit facere! Architecto sint adipisci odit quisquam debitis quasi impedit consequatur suscipit, porro perspiciatis, atque explicabo earum eligendi nihil nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ipsam dicta repudiandae at non sint, tempora optio cumque, voluptatibus molestiae numquam expedita aut vitae minus suscipit, vel minima quod? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis et harum nemo suscipit. Facere, inventore deserunt. Maiores ipsam sed laudantium culpa, cum, itaque, quos mollitia dolore perspiciatis nobis fugiat commodi.</p>
 </body>
 </html>
